@@ -156,7 +156,7 @@ img {
   display: flex;
   align-items: center;
 
-  background-image: url('images/hero-judaica.jpg');
+  background-image: url('images/hero-judaica.png');
 
   background-size: cover;
   background-position: center;
@@ -416,17 +416,23 @@ img {
   align-items: center;
   justify-content: center;
 
+  text-align: center;
+
   padding: 24px;
 
   border: 1px solid rgba(201,164,76,0.35);
 
   background: rgba(255,255,255,0.04);
 
-  color: #fff;
+  color: var(--gold-dark);
 
   text-decoration: none;
 
+  font-family: 'Cormorant Garamond', serif;
+
   font-size: 1.8rem;
+
+  line-height: 1.5;
 
   transition: 0.3s ease;
 }
@@ -458,7 +464,7 @@ img {
 .about-image {
   min-height: 540px;
 
-  background-image: url('images/about-judaica.jpg');
+  background-image: url('images/logo.png');
 
   background-size: cover;
   background-position: center;
