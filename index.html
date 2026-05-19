@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- פונטים שמתאימים לעברית -->
   <link
     href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -37,10 +36,11 @@
       </label>
 
       <nav class="main-nav">
-        <a href="#collections">קולקציות</a>
-        <a href="#categories">קטגוריות</a>
-        <a href="#about">אודות</a>
-        <a href="#contact">יצירת קשר</a>
+        <a href="#collections" data-key="navCollections">קולקציות</a>
+        <a href="#categories" data-key="navCategories">קטגוריות</a>
+        <a href="#about" data-key="navAbout">אודות</a>
+        <a href="#contact" data-key="navContact">יצירת קשר</a>
+        <a href="#" class="lang-switch" data-key="langButton">EN</a>
       </nav>
 
     </div>
@@ -48,265 +48,316 @@
 
   <main>
 
-    <!-- HERO -->
-
     <section class="hero">
-
       <div class="hero-overlay"></div>
 
       <div class="container hero-content">
 
-        <p class="eyebrow">יודאיקה יוקרתית ועיצוב הבית</p>
+        <p class="eyebrow" data-key="heroEyebrow">יודאיקה יוקרתית ועיצוב הבית</p>
 
-        <h1>
+        <h1 data-key="heroTitle">
           פריטי יודאיקה אלגנטיים לכל בית יהודי
         </h1>
 
-        <p class="hero-text">
+        <p class="hero-text" data-key="heroText">
           קולקציה ייחודית של מתנות, פריטי שבת, עיצובי קריסטל,
           ברכות לבית ומוצרים לחגים ולאירועים מיוחדים.
         </p>
 
         <div class="hero-actions">
-
-          <a href="#collections" class="btn btn-primary">
+          <a href="#collections" class="btn btn-primary" data-key="heroBtnCollection">
             לצפייה בקולקציה
           </a>
 
-          <a href="#contact" class="btn btn-secondary">
+          <a href="#contact" class="btn btn-secondary" data-key="heroBtnContact">
             יצירת קשר
           </a>
-
         </div>
 
       </div>
-
     </section>
 
-    <!-- COLLECTION -->
-
     <section id="collections" class="section featured-section">
-
       <div class="container">
 
         <div class="section-title">
-
-          <p class="eyebrow">קולקציה נבחרת</p>
-
-          <h2>קולקציית הקריסטל</h2>
-
-          <p>
+          <p class="eyebrow" data-key="collectionEyebrow">קולקציה נבחרת</p>
+          <h2 data-key="collectionTitle">קולקציית הקריסטל</h2>
+          <p data-key="collectionText">
             מבחר פריטים יוקרתיים בעיצוב אלגנטי ומודרני
           </p>
-
         </div>
 
         <div class="product-grid">
 
           <article class="product-card">
-
             <div class="product-img" style="background-image:url('images/crystal-tray.jpg')"></div>
-
             <div class="product-info">
-              <h3>מגש קריסטל</h3>
-              <p>עיצוב יוקרתי עם ידיות כסף</p>
+              <h3 data-key="product1Title">מגש קריסטל</h3>
+              <p data-key="product1Text">עיצוב יוקרתי עם ידיות כסף</p>
             </div>
-
           </article>
 
           <article class="product-card">
-
             <div class="product-img" style="background-image:url('images/candlesticks.jpg')"></div>
-
             <div class="product-info">
-              <h3>פמוטים לשבת</h3>
-              <p>עיצוב קלאסי ומרשים</p>
+              <h3 data-key="product2Title">פמוטים לשבת</h3>
+              <p data-key="product2Text">עיצוב קלאסי ומרשים</p>
             </div>
-
           </article>
 
           <article class="product-card">
-
             <div class="product-img" style="background-image:url('images/havdalah.jpg')"></div>
-
             <div class="product-info">
-              <h3>סט הבדלה</h3>
-              <p>שילוב זהב וקריסטל</p>
+              <h3 data-key="product3Title">סט הבדלה</h3>
+              <p data-key="product3Text">שילוב זהב וקריסטל</p>
             </div>
-
           </article>
 
           <article class="product-card">
-
             <div class="product-img" style="background-image:url('images/menorah.jpg')"></div>
-
             <div class="product-info">
-              <h3>חנוכייה</h3>
-              <p>עיצוב אלגנטי בגימור יוקרתי</p>
+              <h3 data-key="product4Title">חנוכייה</h3>
+              <p data-key="product4Text">עיצוב אלגנטי בגימור יוקרתי</p>
             </div>
-
           </article>
 
         </div>
 
       </div>
-
     </section>
 
-    <!-- CATEGORIES -->
-
     <section id="categories" class="section categories-section">
-
       <div class="container">
 
         <div class="section-title light">
-
-          <p class="eyebrow">קטגוריות מובילות</p>
-
-          <h2>בחרו לפי קטגוריה</h2>
-
+          <p class="eyebrow" data-key="categoriesEyebrow">קטגוריות מובילות</p>
+          <h2 data-key="categoriesTitle">בחרו לפי קטגוריה</h2>
         </div>
 
         <div class="category-grid">
-
-          <a href="#contact" class="category-card">
-            פמוטים
-          </a>
-
-          <a href="#contact" class="category-card">
-            כיסויי חלה
-          </a>
-
-          <a href="#contact" class="category-card">
-            גביעי קידוש
-          </a>
-
-          <a href="#contact" class="category-card">
-            הבדלה
-          </a>
-
-          <a href="#contact" class="category-card">
-            ברכות לבית
-          </a>
-
-          <a href="#contact" class="category-card">
-            עיצוב הבית
-          </a>
-
+          <a href="#contact" class="category-card" data-key="cat1">פמוטים</a>
+          <a href="#contact" class="category-card" data-key="cat2">כיסויי חלה</a>
+          <a href="#contact" class="category-card" data-key="cat3">גביעי קידוש</a>
+          <a href="#contact" class="category-card" data-key="cat4">הבדלה</a>
+          <a href="#contact" class="category-card" data-key="cat5">ברכות לבית</a>
+          <a href="#contact" class="category-card" data-key="cat6">עיצוב הבית</a>
         </div>
 
       </div>
-
     </section>
 
-    <!-- ABOUT -->
-
     <section id="about" class="section about-section">
-
       <div class="container about-grid">
 
         <div class="about-image"></div>
 
         <div class="about-content">
+          <p class="eyebrow" data-key="aboutEyebrow">עסק משפחתי</p>
 
-          <p class="eyebrow">עסק משפחתי</p>
-
-          <h2>
+          <h2 data-key="aboutTitle">
             מסורת, איכות ויופי בכל פריט
           </h2>
 
-          <p>
+          <p data-key="aboutText1">
             Schonfeld Collection משלבת יודאיקה יוקרתית,
             עיצוב הבית ומתנות ייחודיות לשבת, חגים,
             שמחות ואירועים מיוחדים.
           </p>
 
-          <p>
+          <p data-key="aboutText2">
             אתר הנחיתה נבנה בגישה נקייה ומודרנית:
             פתיחה חזקה, קולקציות נבחרות,
             קטגוריות מובילות ודרך פשוטה ליצור קשר.
           </p>
-
         </div>
 
       </div>
-
     </section>
 
-    <!-- BLESSINGS -->
-
     <section class="section blessing-section">
-
       <div class="container">
 
         <div class="section-title">
-
-          <p class="eyebrow">מתנות פופולריות</p>
-
-          <h2>ברכות מעוצבות</h2>
-
+          <p class="eyebrow" data-key="blessingEyebrow">מתנות פופולריות</p>
+          <h2 data-key="blessingTitle">ברכות מעוצבות</h2>
         </div>
 
         <div class="mini-grid">
-
-          <div class="mini-card">ברכת הבית</div>
-
-          <div class="mini-card">מזמור לתודה</div>
-
-          <div class="mini-card">אשת חיל</div>
-
+          <div class="mini-card" data-key="mini1">ברכת הבית</div>
+          <div class="mini-card" data-key="mini2">מזמור לתודה</div>
+          <div class="mini-card" data-key="mini3">אשת חיל</div>
         </div>
 
       </div>
-
     </section>
 
-    <!-- CONTACT -->
-
     <section id="contact" class="contact-section">
-
       <div class="container contact-box">
 
-        <p class="eyebrow">רוצים להזמין?</p>
+        <p class="eyebrow" data-key="contactEyebrow">רוצים להזמין?</p>
 
-        <h2>
+        <h2 data-key="contactTitle">
           צרו איתנו קשר ישירות
         </h2>
 
-        <p>
+        <p data-key="contactText">
           ניתן לחבר את הכפתור ל־WhatsApp,
           אינסטגרם, אימייל או חנות קיימת.
         </p>
 
         <a class="btn btn-primary" href="https://wa.me/0000000000" target="_blank">
-
           <i class="fa fa-whatsapp"></i>
-
-          דברו איתנו בוואטסאפ
-
+          <span data-key="whatsappBtn">דברו איתנו בוואטסאפ</span>
         </a>
 
       </div>
-
     </section>
 
   </main>
 
   <footer class="site-footer">
-
     <div class="container footer-inner">
-
-      <p>
-        © 2026 Schonfeld Collection
-      </p>
-
-      <p>
-        יודאיקה • עיצוב הבית • מתנות
-      </p>
-
+      <p>© 2026 Schonfeld Collection</p>
+      <p data-key="footerText">יודאיקה • עיצוב הבית • מתנות</p>
     </div>
-
   </footer>
+
+  <script>
+    const translations = {
+      he: {
+        navCollections: "קולקציות",
+        navCategories: "קטגוריות",
+        navAbout: "אודות",
+        navContact: "יצירת קשר",
+        langButton: "EN",
+
+        heroEyebrow: "יודאיקה יוקרתית ועיצוב הבית",
+        heroTitle: "פריטי יודאיקה אלגנטיים לכל בית יהודי",
+        heroText: "קולקציה ייחודית של מתנות, פריטי שבת, עיצובי קריסטל, ברכות לבית ומוצרים לחגים ולאירועים מיוחדים.",
+        heroBtnCollection: "לצפייה בקולקציה",
+        heroBtnContact: "יצירת קשר",
+
+        collectionEyebrow: "קולקציה נבחרת",
+        collectionTitle: "קולקציית הקריסטל",
+        collectionText: "מבחר פריטים יוקרתיים בעיצוב אלגנטי ומודרני",
+
+        product1Title: "מגש קריסטל",
+        product1Text: "עיצוב יוקרתי עם ידיות כסף",
+        product2Title: "פמוטים לשבת",
+        product2Text: "עיצוב קלאסי ומרשים",
+        product3Title: "סט הבדלה",
+        product3Text: "שילוב זהב וקריסטל",
+        product4Title: "חנוכייה",
+        product4Text: "עיצוב אלגנטי בגימור יוקרתי",
+
+        categoriesEyebrow: "קטגוריות מובילות",
+        categoriesTitle: "בחרו לפי קטגוריה",
+        cat1: "פמוטים",
+        cat2: "כיסויי חלה",
+        cat3: "גביעי קידוש",
+        cat4: "הבדלה",
+        cat5: "ברכות לבית",
+        cat6: "עיצוב הבית",
+
+        aboutEyebrow: "עסק משפחתי",
+        aboutTitle: "מסורת, איכות ויופי בכל פריט",
+        aboutText1: "Schonfeld Collection משלבת יודאיקה יוקרתית, עיצוב הבית ומתנות ייחודיות לשבת, חגים, שמחות ואירועים מיוחדים.",
+        aboutText2: "אתר הנחיתה נבנה בגישה נקייה ומודרנית: פתיחה חזקה, קולקציות נבחרות, קטגוריות מובילות ודרך פשוטה ליצור קשר.",
+
+        blessingEyebrow: "מתנות פופולריות",
+        blessingTitle: "ברכות מעוצבות",
+        mini1: "ברכת הבית",
+        mini2: "מזמור לתודה",
+        mini3: "אשת חיל",
+
+        contactEyebrow: "רוצים להזמין?",
+        contactTitle: "צרו איתנו קשר ישירות",
+        contactText: "ניתן לחבר את הכפתור ל־WhatsApp, אינסטגרם, אימייל או חנות קיימת.",
+        whatsappBtn: "דברו איתנו בוואטסאפ",
+
+        footerText: "יודאיקה • עיצוב הבית • מתנות"
+      },
+
+      en: {
+        navCollections: "Collections",
+        navCategories: "Categories",
+        navAbout: "About",
+        navContact: "Contact",
+        langButton: "HE",
+
+        heroEyebrow: "Luxury Judaica & Home Design",
+        heroTitle: "Elegant Judaica Pieces for Every Jewish Home",
+        heroText: "A unique collection of gifts, Shabbat pieces, crystal designs, home blessings, and products for holidays and special occasions.",
+        heroBtnCollection: "View Collection",
+        heroBtnContact: "Contact Us",
+
+        collectionEyebrow: "Featured Collection",
+        collectionTitle: "The Crystal Collection",
+        collectionText: "A selection of luxury pieces with elegant and modern design",
+
+        product1Title: "Crystal Tray",
+        product1Text: "Luxury design with silver handles",
+        product2Title: "Shabbat Candlesticks",
+        product2Text: "Classic and impressive design",
+        product3Title: "Havdalah Set",
+        product3Text: "Gold and crystal combination",
+        product4Title: "Menorah",
+        product4Text: "Elegant design with a luxury finish",
+
+        categoriesEyebrow: "Popular Categories",
+        categoriesTitle: "Choose by Category",
+        cat1: "Candlesticks",
+        cat2: "Challah Covers",
+        cat3: "Kiddush Cups",
+        cat4: "Havdalah",
+        cat5: "Home Blessings",
+        cat6: "Home Decor",
+
+        aboutEyebrow: "Family Business",
+        aboutTitle: "Tradition, Quality and Beauty in Every Piece",
+        aboutText1: "Schonfeld Collection combines luxury Judaica, home design, and unique gifts for Shabbat, holidays, celebrations, and special occasions.",
+        aboutText2: "The landing page was designed with a clean and modern approach: a strong opening, selected collections, leading categories, and a simple way to get in touch.",
+
+        blessingEyebrow: "Popular Gifts",
+        blessingTitle: "Designed Blessings",
+        mini1: "Home Blessing",
+        mini2: "Mizmor LeToda",
+        mini3: "Eshet Chayil",
+
+        contactEyebrow: "Want to Order?",
+        contactTitle: "Contact Us Directly",
+        contactText: "The button can be connected to WhatsApp, Instagram, email, or an existing store.",
+        whatsappBtn: "Chat with Us on WhatsApp",
+
+        footerText: "Judaica • Home Design • Gifts"
+      }
+    };
+
+    let currentLang = "he";
+
+    function setLanguage(lang) {
+      currentLang = lang;
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+
+      document.querySelectorAll("[data-key]").forEach(function(element) {
+        const key = element.getAttribute("data-key");
+        element.textContent = translations[lang][key];
+      });
+    }
+
+    document.querySelector(".lang-switch").addEventListener("click", function(event) {
+      event.preventDefault();
+
+      if (currentLang === "he") {
+        setLanguage("en");
+      } else {
+        setLanguage("he");
+      }
+    });
+  </script>
 
 </body>
 
