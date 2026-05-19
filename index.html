@@ -206,7 +206,7 @@
           אינסטגרם, אימייל או חנות קיימת.
         </p>
 
-        <a class="btn btn-primary" href="https://wa.me/0000000000" target="_blank">
+        <a class="btn btn-primary" href="https://wa.me/0548835242" target="_blank">
           <i class="fa fa-whatsapp"></i>
           <span data-key="whatsappBtn">דברו איתנו בוואטסאפ</span>
         </a>
@@ -342,13 +342,13 @@
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
 
-      document.querySelectorAll("[data-key]").forEach(function(element) {
+      document.querySelectorAll("[data-key]").forEach(function (element) {
         const key = element.getAttribute("data-key");
         element.textContent = translations[lang][key];
       });
     }
 
-    document.querySelector(".lang-switch").addEventListener("click", function(event) {
+    document.querySelector(".lang-switch").addEventListener("click", function (event) {
       event.preventDefault();
 
       if (currentLang === "he") {
@@ -356,6 +356,19 @@
       } else {
         setLanguage("he");
       }
+
+      /* סוגר את הבורגר */
+      document.getElementById("menu-toggle").checked = false;
+    });
+
+    document.querySelectorAll(".main-nav a").forEach(function (link) {
+
+      link.addEventListener("click", function () {
+
+        document.getElementById("menu-toggle").checked = false;
+
+      });
+
     });
   </script>
 
