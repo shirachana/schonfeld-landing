@@ -25,6 +25,8 @@
   <header class="site-header">
     <div class="container header-inner">
 
+      <div class="bsd">בס״ד</div>
+
       <a href="#" class="brand-logo" aria-label="Schonfeld Collection">
         <img src="images/logo.png" alt="Schonfeld Collection">
       </a>
@@ -36,8 +38,7 @@
       </label>
 
       <nav class="main-nav">
-        <a href="#collections" data-key="navCollections">קולקציות</a>
-        <a href="#categories" data-key="navCategories">קטגוריות</a>
+        <a href="#collections" data-key="navCollections">מוצרים</a>
         <a href="#about" data-key="navAbout">אודות</a>
         <a href="#contact" data-key="navContact">יצירת קשר</a>
         <a href="#" class="lang-switch" data-key="langButton">EN</a>
@@ -213,6 +214,19 @@
           <span data-key="whatsappBtn">דברו איתנו בוואטסאפ</span>
         </a>
 
+        <a class="contact-link email-link"
+          href="mailto:schonfeldcollection@gmail.com?subject=פנייה%20מאתר%20SCHONFELD%20COLLECTION&body=היי,%20אני%20מעוניינ%2Fת%20לקבל%20פרטים%20נוספים%20לגבי%20המוצרים."
+          target="_blank">
+
+          <i class="fa fa-envelope"></i>
+
+          <span data-key="emailBtn">
+            שלחו לנו מייל
+          </span>
+
+        </a>
+
+
       </div>
     </section>
 
@@ -228,8 +242,7 @@
   <script>
     const translations = {
       he: {
-        navCollections: "קולקציות",
-        navCategories: "קטגוריות",
+        navCollections: "מוצרים",
         navAbout: "אודות",
         navContact: "יצירת קשר",
         langButton: "EN",
@@ -277,13 +290,13 @@
         contactTitle: "צרו איתנו קשר ישירות",
         contactText: "ניתן לחבר את הכפתור ל־WhatsApp, אינסטגרם, אימייל או חנות קיימת.",
         whatsappBtn: "דברו איתנו בוואטסאפ",
+        emailBtn: "שלחו לנו מייל",
 
         footerText: "יודאיקה • עיצוב הבית • מתנות"
       },
 
       en: {
         navCollections: "Collections",
-        navCategories: "Categories",
         navAbout: "About",
         navContact: "Contact",
         langButton: "HE",
@@ -331,6 +344,7 @@
         contactTitle: "Contact Us Directly",
         contactText: "The button can be connected to WhatsApp, Instagram, email, or an existing store.",
         whatsappBtn: "Chat with Us on WhatsApp",
+        emailBtn: "Send Us an Email",
 
         footerText: "Judaica • Home Design • Gifts"
       }

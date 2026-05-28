@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Platforma';
+
+  src: url('fonts/BAPlatforma-Regular.otf') format('opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --cream: #f5f1e8;
   --paper: #ffffff;
@@ -27,12 +36,17 @@ html {
 }
 
 body {
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Platforma', sans-serif;
   background: var(--cream);
   color: var(--ink);
   line-height: 1.6;
   direction: rtl;
 }
+
+html[dir="ltr"] body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
 
 img {
   max-width: 100%;
@@ -71,23 +85,44 @@ img {
   gap: 24px;
 }
 
+.bsd {
+  color: #fff;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  flex-shrink: 0;
+}
+
 /* LOGO */
 
 .brand-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
+
   flex-shrink: 0;
 
   background: rgba(255,255,255,0.94);
-  padding: 10px 26px;
+
+  padding: 4px 8px;
+
   border-radius: 0 0 34px 34px;
+
   height: 96px;
+
+  width: 290px;
+
+  overflow: hidden;
 }
 
 .brand-logo img {
-  width: 260px;
+  max-width: unset;
+  width: 420px;
   height: auto;
   object-fit: contain;
   filter: none;
@@ -208,6 +243,19 @@ img {
 .product-info h3,
 .category-card,
 .mini-card {
+  font-family: 'Platforma', sans-serif;
+  font-weight: 700;
+}
+
+/* ENGLISH FONT */
+
+html[dir="ltr"] .hero h1,
+html[dir="ltr"] .section-title h2,
+html[dir="ltr"] .about-content h2,
+html[dir="ltr"] .contact-box h2,
+html[dir="ltr"] .product-info h3,
+html[dir="ltr"] .category-card,
+html[dir="ltr"] .mini-card {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
 }
@@ -428,8 +476,7 @@ img {
 
   text-decoration: none;
 
-  font-family: 'Cormorant Garamond', serif;
-
+  font-family: 'Platforma', sans-serif;
   font-size: 1.8rem;
 
   line-height: 1.5;
@@ -539,6 +586,42 @@ img {
   margin-bottom: 28px;
 }
 
+/* CONTACT BUTTONS */
+
+.contact-box .btn,
+.contact-link {
+  margin: 8px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 34px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: 0.3s ease;
+}
+
+/* EMAIL BUTTON */
+
+.email-link {
+  border: 1px solid rgba(255,255,255,0.6);
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+}
+
+.email-link:hover {
+  background: #fff;
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -597,8 +680,12 @@ img {
   }
 
   .brand-logo img {
-    width: 190px;
-  }
+  max-width: unset;
+
+  width: 320px;
+
+  height: auto;
+}
 
   .burger {
     display: block;
