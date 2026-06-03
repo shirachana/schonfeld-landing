@@ -37,7 +37,7 @@
       </label>
 
       <nav class="main-nav">
-        <a href="#collections" data-key="navCollections">מוצרים</a>
+        <a href="#categories" data-key="navCollections">מוצרים</a>
         <a href="#about" data-key="navAbout">אודות</a>
         <a href="#contact" data-key="navContact">יצירת קשר</a>
         <a href="#" class="lang-switch" data-key="langButton">EN</a>
@@ -49,8 +49,8 @@
   <main>
 
     <section class="hero">
-      
-      
+
+
 
       <div class="container hero-content">
 
@@ -74,63 +74,13 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#collections" class="btn btn-primary" data-key="heroBtnCollection">
+          <a href="#categories" class="btn btn-primary" data-key="heroBtnCollection">
             לצפייה במגוון
           </a>
 
           <a href="#contact" class="btn btn-secondary" data-key="heroBtnContact">
             יצירת קשר
           </a>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="collections" class="section featured-section">
-      <div class="container">
-
-        <div class="section-title">
-          <p class="eyebrow" data-key="collectionEyebrow">קולקציה נבחרת</p>
-          <h2 data-key="collectionTitle">קולקציית הקריסטל</h2>
-          <p data-key="collectionText">
-            מבחר פריטים יוקרתיים בעיצוב אלגנטי ומודרני
-          </p>
-        </div>
-
-        <div class="product-grid">
-
-          <article class="product-card">
-            <div class="product-img" style="background-image:url('images/crystal-tray.jpg')"></div>
-            <div class="product-info">
-              <h3 data-key="product1Title">מגשי קריסטל</h3>
-              <p data-key="product1Text">עיצוב יוקרתי עם ידיות כסף</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img" style="background-image:url('images/candlesticks.jpg')"></div>
-            <div class="product-info">
-              <h3 data-key="product2Title">פמוטים לשבת</h3>
-              <p data-key="product2Text">עיצוב קלאסי ומרשים</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img" style="background-image:url('images/havdalah.jpg')"></div>
-            <div class="product-info">
-              <h3 data-key="product3Title">קנדלברות</h3>
-              <p data-key="product3Text">בעיצוב מרשים ואלגנטי</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img" style="background-image:url('images/menorah.jpg')"></div>
-            <div class="product-info">
-              <h3 data-key="product4Title">חנוכיות</h3>
-              <p data-key="product4Text">עיצוב אלגנטי בגימור יוקרתי</p>
-            </div>
-          </article>
-
         </div>
 
       </div>
@@ -145,12 +95,124 @@
         </div>
 
         <div class="category-grid">
-          <a href="#contact" class="category-card" data-key="cat1">פמוטים וקנדלברות</a>
-          <a href="#contact" class="category-card" data-key="cat2">כיסויי חלה פלטה והפרשת חלה</a>
-          <a href="#contact" class="category-card" data-key="cat3">גביעי קידוש ומחלקי יין</a>
-          <a href="#contact" class="category-card" data-key="cat4">סטים להבדלה</a>
-          <a href="#contact" class="category-card" data-key="cat5">ברכות לבית</a>
-          <a href="#contact" class="category-card" data-key="cat6">מפות, מפיות וחבקים</a>
+
+          <div class="category-card">
+            <div class="category-images">
+              <img src="images/candlesticks.jpg" alt="">
+              <img src="images/havdalah.jpg" alt="">
+            </div>
+
+            <h3 data-key="crystalTitle">קריסטל</h3>
+
+            <button class="category-toggle" data-key="productsListBtn">לרשימת מוצרים</button>
+
+            <div class="category-list">
+              <button class="close-list">×</button>
+              <h4 data-key="crystalTitle">קריסטל</h4>
+              <ul>
+                <li data-key="crystal1">פמוטים</li>
+                <li data-key="crystal2">קנדלברות</li>
+                <li data-key="crystal3">מגשי חלות ופמוטים</li>
+                <li data-key="crystal4">מלחיות</li>
+                <li data-key="crystal5">מחזיקי גפרורים</li>
+                <li data-key="crystal6">קופות צדקה</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-images">
+              <img src="images/crystal-tray.jpg" alt="">
+              <img src="images/logo.png" alt="">
+            </div>
+
+            <h3 data-key="acrylicTitle">אקריליק</h3>
+
+            <button class="category-toggle" data-key="productsListBtn">לרשימת מוצרים</button>
+
+            <div class="category-list">
+              <button class="close-list">×</button>
+              <h4 data-key="acrylicTitle">אקריליק</h4>
+              <ul>
+                <li data-key="acrylic1">ברכות לבית</li>
+                <li data-key="acrylic2">נטלות</li>
+                <li data-key="acrylic3">מגשי חלות</li>
+                <li data-key="acrylic4">סט הבדלה</li>
+                <li data-key="acrylic5">ברכת המזון</li>
+                <li data-key="acrylic6">סטנדרים ללימוד</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-images">
+              <img src="images/menorah.jpg" alt="">
+              <img src="images/crystal-tray.jpg" alt="">
+            </div>
+
+            <h3 data-key="textileTitle">טקסטיל</h3>
+
+            <button class="category-toggle" data-key="productsListBtn">לרשימת מוצרים</button>
+
+            <div class="category-list">
+              <button class="close-list">×</button>
+              <h4 data-key="textileTitle">טקסטיל</h4>
+              <ul>
+                <li data-key="textile1">כיסויי חלה</li>
+                <li data-key="textile2">כיסויי פלטה</li>
+                <li data-key="textile3">הפרשת חלה</li>
+                <li data-key="textile4">מגבות</li>
+                <li data-key="textile5">מפות שולחן</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-images">
+              <img src="images/havdalah.jpg" alt="">
+              <img src="images/candlesticks.jpg" alt="">
+            </div>
+
+            <h3 data-key="decorTitle">מוצרי נוי</h3>
+
+            <button class="category-toggle" data-key="productsListBtn">לרשימת מוצרים</button>
+
+            <div class="category-list">
+              <button class="close-list">×</button>
+              <h4 data-key="decorTitle">מוצרי נוי</h4>
+              <ul>
+                <li data-key="decor1">שעונים</li>
+                <li data-key="decor2">קופסאות תכשיטים</li>
+                <li data-key="decor3">קופסאות תה</li>
+                <li data-key="decor4">ציפורים</li>
+                <li data-key="decor5">כלייזמרים</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-images">
+              <img src="images/logo.png" alt="">
+              <img src="images/menorah.jpg" alt="">
+            </div>
+
+            <h3 data-key="holidaysTitle">חגים</h3>
+
+            <button class="category-toggle" data-key="productsListBtn">לרשימת מוצרים</button>
+
+            <div class="category-list">
+              <button class="close-list">×</button>
+              <h4 data-key="holidaysTitle">חגים</h4>
+              <ul>
+                <li data-key="holidays1">ראש השנה</li>
+                <li data-key="holidays2">סוכות</li>
+                <li data-key="holidays3">חנוכה</li>
+                <li data-key="holidays4">פורים</li>
+                <li data-key="holidays5">פסח</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -179,23 +241,6 @@
             פתיחה חזקה, קולקציות נבחרות,
             קטגוריות מובילות ודרך פשוטה ליצור קשר.
           </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section blessing-section">
-      <div class="container">
-
-        <div class="section-title">
-          <p class="eyebrow" data-key="blessingEyebrow">מתנות פופולריות</p>
-          <h2 data-key="blessingTitle">ברכות מעוצבות</h2>
-        </div>
-
-        <div class="mini-grid">
-          <div class="mini-card" data-key="mini1">ברכת הבית</div>
-          <div class="mini-card" data-key="mini2">מזמור לתודה</div>
-          <div class="mini-card" data-key="mini3">אשת חיל</div>
         </div>
 
       </div>
@@ -260,38 +305,51 @@
         heroBtnCollection: "לצפייה במגוון",
         heroBtnContact: "יצירת קשר",
 
-        collectionEyebrow: "קולקציה נבחרת",
-        collectionTitle: "קולקציית הקריסטל",
-        collectionText: "מבחר פריטים יוקרתיים בעיצוב אלגנטי ומודרני",
-
-        product1Title: "מגשי קריסטל",
-        product1Text: "עיצוב יוקרתי עם ידיות כסף",
-        product2Title: "פמוטים לשבת",
-        product2Text: "עיצוב קלאסי ומרשים",
-        product3Title: "קנדלברות",
-        product3Text: "בעיצוב מרשים ואלגנטי",
-        product4Title: "חנוכיות",
-        product4Text: "עיצוב אלגנטי בגימור יוקרתי",
-
         categoriesEyebrow: "קטגוריות מובילות",
         categoriesTitle: "בחרו לפי קטגוריה",
-        cat1: "פמוטים וקנדלברות",
-        cat2: "כיסויי חלה - פלטה והפרשת חלה",
-        cat3: "גביעי קידוש ומחלקי יין",
-        cat4: "סטים להבדלה",
-        cat5: "ברכות לבית",
-        cat6: "מפות, מפיות וחבקים",
+        productsListBtn: "לרשימת מוצרים",
+
+        crystalTitle: "קריסטל",
+        crystal1: "פמוטים",
+        crystal2: "קנדלברות",
+        crystal3: "מגשי חלות ופמוטים",
+        crystal4: "מלחיות",
+        crystal5: "מחזיקי גפרורים",
+        crystal6: "קופות צדקה",
+
+        acrylicTitle: "אקריליק",
+        acrylic1: "ברכות לבית",
+        acrylic2: "נטלות",
+        acrylic3: "מגשי חלות",
+        acrylic4: "סט הבדלה",
+        acrylic5: "ברכת המזון",
+        acrylic6: "סטנדרים ללימוד",
+
+        textileTitle: "טקסטיל",
+        textile1: "כיסויי חלה",
+        textile2: "כיסויי פלטה",
+        textile3: "הפרשת חלה",
+        textile4: "מגבות",
+        textile5: "מפות שולחן",
+
+        decorTitle: "מוצרי נוי",
+        decor1: "שעונים",
+        decor2: "קופסאות תכשיטים",
+        decor3: "קופסאות תה",
+        decor4: "ציפורים",
+        decor5: "כלייזמרים",
+
+        holidaysTitle: "חגים",
+        holidays1: "ראש השנה",
+        holidays2: "סוכות",
+        holidays3: "חנוכה",
+        holidays4: "פורים",
+        holidays5: "פסח",
 
         aboutEyebrow: "עסק משפחתי",
         aboutTitle: "מסורת, איכות ויופי בכל פריט",
         aboutText1: "Schonfeld Collection משלבת יודאיקה יוקרתית, עיצוב הבית ומתנות ייחודיות לשבת, חגים, שמחות ואירועים מיוחדים.",
         aboutText2: "אתר הנחיתה נבנה בגישה נקייה ומודרנית: פתיחה חזקה, קולקציות נבחרות, קטגוריות מובילות ודרך פשוטה ליצור קשר.",
-
-        blessingEyebrow: "מתנות פופולריות",
-        blessingTitle: "ברכות מעוצבות",
-        mini1: "ברכת הבית",
-        mini2: "מזמור לתודה",
-        mini3: "אשת חיל",
 
         contactEyebrow: "רוצים להזמין?",
         contactTitle: "צרו איתנו קשר ישירות",
@@ -317,34 +375,51 @@
         collectionTitle: "The Crystal Collection",
         collectionText: "A selection of luxury pieces with elegant and modern design",
 
-        product1Title: "Crystal Trays",
-        product1Text: "Luxury design with silver handles",
-        product2Title: "Shabbat Candlesticks",
-        product2Text: "Classic and impressive design",
-        product3Title: "Candelabras",
-        product3Text: "Impressive and elegant design",
-        product4Title: "Hanukkah Menorahs",
-        product4Text: "Elegant design with a luxury finish",
-
         categoriesEyebrow: "Popular Categories",
         categoriesTitle: "Choose by Category",
-        cat1: "Candlesticks & Candelabras",
-        cat2: "Challah Covers, Hot Plates & Hafrashat Challah",
-        cat3: "Kiddush Cups & Wine Dispensers",
-        cat4: "Havdalah Sets",
-        cat5: "Home Blessings",
-        cat6: "Tablecloths, Napkins & Napkin Rings",
+        productsListBtn: "Product List",
+
+        crystalTitle: "Crystal",
+        crystal1: "Candlesticks",
+        crystal2: "Candelabras",
+        crystal3: "Challah Trays & Candlesticks",
+        crystal4: "Salt Cellars",
+        crystal5: "Match Holders",
+        crystal6: "Tzedakah Boxes",
+
+        acrylicTitle: "Acrylic",
+        acrylic1: "Home Blessings",
+        acrylic2: "Washing Cups",
+        acrylic3: "Challah Trays",
+        acrylic4: "Havdalah Set",
+        acrylic5: "Birkat Hamazon",
+        acrylic6: "Study Stands",
+
+        textileTitle: "Textile",
+        textile1: "Challah Covers",
+        textile2: "Hot Plate Covers",
+        textile3: "Hafrashat Challah",
+        textile4: "Towels",
+        textile5: "Tablecloths",
+
+        decorTitle: "Decor",
+        decor1: "Clocks",
+        decor2: "Jewelry Boxes",
+        decor3: "Tea Boxes",
+        decor4: "Birds",
+        decor5: "Klezmer Figurines",
+
+        holidaysTitle: "Holidays",
+        holidays1: "Rosh Hashanah",
+        holidays2: "Sukkot",
+        holidays3: "Hanukkah",
+        holidays4: "Purim",
+        holidays5: "Passover",
 
         aboutEyebrow: "Family Business",
         aboutTitle: "Tradition, Quality and Beauty in Every Piece",
         aboutText1: "Schonfeld Collection combines luxury Judaica, home design, and unique gifts for Shabbat, holidays, celebrations, and special occasions.",
         aboutText2: "The landing page was designed with a clean and modern approach: a strong opening, selected collections, leading categories, and a simple way to get in touch.",
-
-        blessingEyebrow: "Popular Gifts",
-        blessingTitle: "Designed Blessings",
-        mini1: "Home Blessing",
-        mini2: "Mizmor LeToda",
-        mini3: "Eshet Chayil",
 
         contactEyebrow: "Want to Order?",
         contactTitle: "Contact Us Directly",
@@ -392,6 +467,18 @@
       });
 
     });
+
+    document.querySelectorAll(".category-toggle").forEach(function (button) {
+      button.addEventListener("click", function () {
+        button.closest(".category-card").classList.add("active");
+      });
+    });
+
+    document.querySelectorAll(".close-list").forEach(function (button) {
+      button.addEventListener("click", function () {
+        button.closest(".category-card").classList.remove("active");
+      });
+    }); 
   </script>
 
 </body>
