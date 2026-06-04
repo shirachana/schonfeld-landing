@@ -573,9 +573,20 @@ html[dir="ltr"] .category-card {
     --header-height: 76px;
   }
 
-  .header-inner {
-    /* height: var(--header-height);*/
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+   .header-inner {
     align-items: center;
+    padding: 0 16px;
   }
 
   .brand-logo {
@@ -626,15 +637,18 @@ html[dir="ltr"] .category-card {
     display: flex;
   }
 
-  .hero {
+   .hero {
+    width: 100%;
+    overflow: hidden;
     background-size: cover;
     background-position: left center;
   }
 
   .hero-content {
-    margin: 0 auto;
-    max-width: 92%;
-    padding-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 16px 30px;
   }
 
   .hero h1 {
@@ -643,6 +657,7 @@ html[dir="ltr"] .category-card {
 
   .hero-logo-img {
     width: 300px;
+    max-width: 100%;
   }
 
   .hero-comma {
@@ -650,11 +665,20 @@ html[dir="ltr"] .category-card {
   }
 
   .hero-title-line {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
+  
   .hero-actions {
     gap: 14px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: min(280px, 100%);
   }
 
   .section {
