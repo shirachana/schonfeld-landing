@@ -686,6 +686,17 @@ html[dir="ltr"] .category-card {
     padding: 68px 0;
   }
 
+  .section-title.light {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-title.light img {
+    max-width: 90%;
+    margin: 0;
+}
+
   .footer-inner {
     flex-direction: column;
     text-align: center;
