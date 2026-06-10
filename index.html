@@ -59,8 +59,6 @@
 
           <div class="hero-logo-row">
             <img src="images/logo-text.png" alt="Schonfeld" class="hero-logo-img">
-
-            <span class="hero-comma">,</span>
           </div>
 
           <span class="hero-title-line" data-key="heroTitle">
@@ -275,20 +273,16 @@
           המכירה אינה מיועדת ליחידים — המכירה בסיטונאות בלבד
         </p>
 
-        <p data-key="contactText">
-          ניתן לחבר את הכפתור ל־WhatsApp,
-          אינסטגרם, אימייל או חנות קיימת.
-        </p>
 
         <a class="btn btn-primary"
-          href="https://wa.me/972548835242?text=היי%20מתעניינ%2Fת%20לגביי%20המוצרים%20של%20SCHONFELD%20COLLECTION%20אשמח%20שיצרו%20איתי%20קשר%20בהקדם"
+          href="https://wa.me/972548835242?text=היי%20מתעניינ%2Fת%20לגביי%20המוצרים%20של%20Schonfeld%20Collection%20אשמח%20שיצרו%20איתי%20קשר%20בהקדם"
           target="_blank">
           <i class="fa fa-whatsapp"></i>
           <span data-key="whatsappBtn">דברו איתנו בוואטסאפ</span>
         </a>
 
         <a class="contact-link email-link"
-          href="mailto:schonfeldcollection@gmail.com?subject=פנייה%20מאתר%20SCHONFELD%20COLLECTION&body=היי,%20אני%20מעוניינ%2Fת%20לקבל%20פרטים%20נוספים%20לגבי%20המוצרים."
+          href="mailto:schonfeldcollection@gmail.com?subject=פנייה%20מאתר%20SchonfeldD%20Collection&body=היי,%20אני%20מעוניינ%2Fת%20לקבל%20פרטים%20נוספים%20לגבי%20המוצרים."
           target="_blank">
 
           <i class="fa fa-envelope"></i>
@@ -306,20 +300,20 @@
 
             <div class="region-card">
               <h4 data-key="northRegion">אזור צפון</h4>
-              <p data-key="northName">שם הסוכן</p>
-              <a href="tel:0500000000">050-0000000</a>
+              <p data-key="northName">שמואל</p>
+              <a href="tel:0500000000">054-8835237</a>
             </div>
 
             <div class="region-card">
               <h4 data-key="centerRegion">אזור מרכז</h4>
-              <p data-key="centerName">שם הסוכן</p>
-              <a href="tel:0500000000">050-0000000</a>
+              <p data-key="centerName">דני</p>
+              <a href="tel:0500000000">054-8835239</a>
             </div>
 
             <div class="region-card">
               <h4 data-key="southRegion">אזור דרום</h4>
-              <p data-key="southName">שם הסוכן</p>
-              <a href="tel:0500000000">050-0000000</a>
+              <p data-key="southName">פנחס</p>
+              <a href="tel:0500000000">053-3973578</a>
             </div>
 
           </div>
@@ -400,18 +394,17 @@
 
         contactEyebrow: "רוצים להזמין?",
         contactTitle: "צרו איתנו קשר ישירות",
-        contactText: "ניתן לחבר את הכפתור ל־WhatsApp, אינסטגרם, אימייל או חנות קיימת.",
         whatsappBtn: "דברו איתנו בוואטסאפ",
         emailBtn: "שלחו לנו מייל",
-        
+
         wholesaleNote: "המכירה אינה מיועדת ליחידים — המכירה בסיטונאות בלבד",
         regionsTitle: "להתקשרות לפי אזורים",
         northRegion: "אזור צפון",
-        northName: "שם הסוכן",
+        northName: "שמואל",
         centerRegion: "אזור מרכז",
-        centerName: "שם הסוכן",
+        centerName: "דני",
         southRegion: "אזור דרום",
-        southName: "שם הסוכן",
+        southName: "פנחס",
 
         footerText: "יודאיקה • עיצוב הבית • מתנות"
       },
@@ -478,20 +471,19 @@
         aboutText3: "With this vision, Schonfeld creates a range of designed Judaica pieces: challah trays, candle trays, napkin rings, tableware, and complementary items — all combining clean lines, quality materials, and a luxurious presence that brings inspiration and holiness into the home.",
         aboutText4: "Schonfeld Judaica — illuminating the beauty of the mitzvah.",
 
-        contactEyebrow: "Want to Order?",
+        contactEyebrow: "?Want to Order",
         contactTitle: "Contact Us Directly",
-        contactText: "The button can be connected to WhatsApp, Instagram, email, or an existing store.",
         whatsappBtn: "Chat with Us on WhatsApp",
         emailBtn: "Send Us an Email",
 
         wholesaleNote: "Sales are not intended for individuals — wholesale only",
         regionsTitle: "Contact by Region",
         northRegion: "Northern Region",
-        northName: "Agent Name",
+        northName: "Shmuel",
         centerRegion: "Central Region",
-        centerName: "Agent Name",
+        centerName: "Dani",
         southRegion: "Southern Region",
-        southName: "Agent Name",
+        southName: "Pinchas",
 
         footerText: "Judaica • Home Design • Gifts"
       }
@@ -504,6 +496,16 @@
 
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+
+      const aboutContent = document.querySelector(".about-content");
+
+      if (lang === "en") {
+        aboutContent.style.direction = "ltr";
+        aboutContent.style.textAlign = "left";
+      } else {
+        aboutContent.style.direction = "rtl";
+        aboutContent.style.textAlign = "right";
+      }
 
       document.querySelectorAll("[data-key]").forEach(function (element) {
         const key = element.getAttribute("data-key");
@@ -536,7 +538,21 @@
 
     document.querySelectorAll(".category-toggle").forEach(function (button) {
       button.addEventListener("click", function () {
-        button.closest(".category-card").classList.add("active");
+
+        const card = button.closest(".category-card");
+
+        card.classList.add("active");
+
+        const y =
+          card.getBoundingClientRect().top +
+          window.pageYOffset -
+          120;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth"
+        });
+
       });
     });
 
