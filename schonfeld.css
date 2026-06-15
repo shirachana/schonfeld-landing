@@ -380,14 +380,22 @@ html[dir="ltr"] .category-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
+
+  max-height: 420px;
+  overflow: hidden;
 }
 
 .category-images img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  height: auto;
+  height: 200px;
   object-fit: contain;
   background: #000;
+ border: 2px solid rgba(201, 164, 76, 0.6);
+  border-radius: 10px;
+}
+
+.category-card:hover .category-images img {
+  border-color: var(--gold);
 }
 
 .crystal-images img {
@@ -400,6 +408,7 @@ html[dir="ltr"] .category-card {
   font-size: 1.45rem;
   line-height: 1.3;
   margin: 18px 0;
+   margin-bottom: 8px;
 }
 
 .category-toggle {
@@ -709,10 +718,25 @@ html[dir="ltr"] .category-card {
     margin: 0;
 }
 
- .category-images {
-    grid-template-columns: 1fr 1fr;
-    height: 360px;
+ .category-card {
+    padding: 14px;
   }
+
+  .category-card h3 {
+    margin-bottom: 6px;
+  }
+
+  .category-images {
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    gap: 4px;
+    margin-top: 0;
+  }
+
+  .category-toggle {
+    margin-top: 6px;
+  }
+
 
   .footer-inner {
     flex-direction: column;
@@ -745,7 +769,7 @@ html[dir="ltr"] .category-card {
 
 .regions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
@@ -789,4 +813,15 @@ html[dir="ltr"] .category-card {
   .regions-grid {
     grid-template-columns: 1fr;
   }
+
+  @media (max-height: 850px) {
+  .category-images {
+    max-height: 340px;
+  }
+
+  .category-images img {
+    height: 160px;
+  }
+}
+
 }
