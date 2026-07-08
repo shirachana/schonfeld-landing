@@ -331,13 +331,17 @@ html[dir="ltr"] .category-card {
   display: flex;
   width: fit-content;
   margin: 0 auto 40px;
-  padding: 14px 34px;
+
+  padding: 18px 48px;   /* הכפתור גדול יותר */
+
   border-radius: 999px;
   background: linear-gradient(135deg, var(--gold), #e0be72);
   color: var(--navy);
   text-decoration: none;
-  font-size: 1rem;
+
+  font-size: 1.25rem;   /* הטקסט גדול יותר */
   font-weight: 700;
+
   box-shadow: 0 12px 30px rgba(201, 164, 76, 0.25);
   transition: all 0.3s ease;
 }
@@ -407,8 +411,8 @@ html[dir="ltr"] .category-card {
   color: var(--gold);
   font-size: 1.45rem;
   line-height: 1.3;
-  margin-top: 8px;
-  margin-bottom: 18px;
+  margin: 18px 0;
+  margin-bottom: 8px;
 }
 
 .category-toggle {
@@ -540,13 +544,13 @@ html[dir="ltr"] .category-card {
 
 /* EMAIL BUTTON */
 .email-link {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, var(--gold), #e0be72);
+  color: var(--navy);
+  border: none;
 }
 
 .email-link:hover {
-  background: #fff;
+  background: linear-gradient(135deg, #e0be72, #f0d18d);
   color: var(--navy);
   transform: translateY(-2px);
 }
@@ -833,4 +837,11 @@ html[dir="rtl"] body {
 /* באנגלית - מספרי הטלפון יישארו בשורה אחת */
 html[dir="ltr"] .region-card a {
     white-space: nowrap;
+}
+
+@media (min-width: 901px) {
+  .category-card h3 {
+    margin-top: 8px;
+    margin-bottom: 18px;
+  }
 }
